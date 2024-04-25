@@ -1,5 +1,5 @@
 {% set name = "pipestat" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pipestat-{{ version }}.tar.gz
-  sha256: 821f01ea4a70ab2f27c08a9792cc27788f7554bff572e310088e18c5aabf3fea
+  sha256: 61c44726612bb06c34cf608dc2e45d8bb0e2b71b5249f1a2010addd32b4678dc
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vvv
   entry_points:
     - pipestat = pipestat.__main__:main
 
@@ -25,12 +25,8 @@ requirements:
     - setuptools
     - jsonschema
     - logmuse >=0.2.5
-    - oyaml
-    - psycopg2
-    - pydantic >=1.10.7,<2.0.0
-    - sqlmodel >=0.0.8
     - ubiquerg >=0.6.1
-    - yacman >=0.9.1
+    - yacman >=0.9.3
     - pyyaml
     - pandas
     - eido
