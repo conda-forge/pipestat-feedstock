@@ -24,7 +24,7 @@ requirements:
     - python >=3.8
     - jsonschema
     - logmuse >=0.2.5
-    - ubiquerg >=0.8.0
+    - ubiquerg >=0.6.1
     - yacman >=0.9.3
     - pyyaml
     - pandas
