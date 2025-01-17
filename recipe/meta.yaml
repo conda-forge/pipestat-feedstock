@@ -1,13 +1,13 @@
 {% set name = "pipestat" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pipestat-{{ version }}.tar.gz
-  sha256: df733f343713330cce4a3b430746b0760ff384153db0ec46d84f02d59182f8e2
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pipestat-{{ version }}.tar.gz
+  sha256: 8802bdb362910247a73c64f579391a0d0de03a5ab94a525e4a2b15fe519b0f21
 
 build:
   number: 0
