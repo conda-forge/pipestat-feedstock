@@ -7,11 +7,11 @@ Home: https://github.com/pepkit/pipestat
 
 Package license: BSD-2-Clause
 
-Summary: A pipeline results reporter
+Summary: A pipeline results reporter.
 
 Development: https://github.com/pepkit/pipestat
 
-Documentation: https://pipestat.databio.org/en/latest/
+Documentation: https://pipestat.databio.org/en/latest
 
 Current build status
 ====================
