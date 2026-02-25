@@ -1,5 +1,5 @@
 {% set name = "pipestat" %}
-{% set version = "0.12.2" %}
+{% set version = "0.13.0" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pipestat-{{ version }}.tar.gz
-  sha256: 1b8fccb9dd12073460f058c219d0f8afd8b0251176cc5216610baccc3f479fbb
+  sha256: 17c28e8e70b72316099ea410feabf5d215ba3aa4d1bb7eae1ca26af2d9c3f976
 
 build:
   number: 0
