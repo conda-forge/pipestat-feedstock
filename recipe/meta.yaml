@@ -1,6 +1,6 @@
 {% set name = "pipestat" %}
 {% set version = "0.13.1" %}
-{% set python_min = "3.8" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name }}
