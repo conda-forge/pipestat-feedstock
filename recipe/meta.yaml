@@ -3,7 +3,7 @@
 {% set python_min = "3.8" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
@@ -21,7 +21,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling
   run:
     - python >={{ python_min }}
     - setuptools
@@ -43,7 +43,7 @@ test:
 about:
   home: "https://github.com/pepkit/pipestat"
   summary: "A pipeline results reporter."
-  license: BSD-2-Clause
+  license: "BSD-2-Clause"
   license_family: BSD
   license_file: LICENSE
   doc_url: "https://pipestat.databio.org/en/latest"
